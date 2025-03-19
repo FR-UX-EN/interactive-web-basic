@@ -1,0 +1,46 @@
+.stage{
+    position: relative;
+    width: 100vw;
+    height: 75vw;
+    background: #fff000;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(90vw);
+    }
+}
+.ilbuni {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;     /* contain 은 이미지가 온전히 다 들어간다. 화면에 맞게 꽉 채워줘서 잘리는부분이 없음, 커버는 화면 전체에 채워져서 이미지가 잘리는 부분이 생긴다. */
+    animation: moving infinite alternate;
+}
+
+
+.ilbuni:nth-of-type(1) {
+    background-image: url('../images/ilbuni_0.png');
+    left: 5%;
+    bottom: 10%;
+    animation-duration: 2s;
+}
+
+.ilbuni:nth-of-type(2) {
+    background-image: url('../images/ilbuni_1.png');
+    left: 10%;
+    bottom: 3%;
+    animation-duration: 3s;
+
+}
+.ilbuni:nth-of-type(3) {
+    background-image: url('../images/ilbuni_2.png');
+    left: 7%;
+    bottom: 5%;
+    animation-duration: 4s;
+}

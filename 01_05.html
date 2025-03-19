@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Web</title>
+    <style>
+        /* grid 는 격자로 구성 가로, 세로 축 두가지 방향으로 축 구성, 지원하는 브라우저가 많지 않음, 아직 실무에서 안쓰는 곳도 많다 */
+        /* flex box 는 가로축만! 실무에서도 많이 쓰임 */
+        .container {
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: flex-start; */
+            /*  flex-start, center, flex-end, space-between, space-around   */
+            align-items: stretch;
+            /* stretch, flex-start, flex-end, center,  */
+            height: 80vh;
+            background: gray;
+        }
+        .item {
+            /* flex-grow: 1; */
+            /* 자기 컨텐츠를 제외하고 여백의 비율을 나누어 갖는다. */
+            /* flex-basis: 0; */
+            flex: 1;
+            padding: 2em;
+            border: 3px solid black;
+            background: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">AAA</div>
+        <div class="item">B</div>
+        <div class="item">CCCCCC</div>
+        <div class="item">DDD</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>

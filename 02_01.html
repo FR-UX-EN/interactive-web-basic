@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <met`a http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interactive Web</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/02_01.css">
+
+        <!-- <script>
+            // window.addEventListener('load', function() {  // 페이지 load 가 다 되면 함수를 실행할 수 있음
+            window.addEventListener('DOMContentLoaded', function() {
+                const ilbuni = document.querySelector('.ilbuni.c');
+
+                function clickIlbuniHandler() {
+                    ilbuni.classList.toggle('special');
+                }
+                ilbuni.addEventListener('click', clickIlbuniHandler)
+            })
+        </script> -->
+</head>
+
+<body>
+    <div class="characters">
+        <div class="ilbuni a">
+            <img src="images/ilbuni_0.png" alt="일분이">
+        </div>
+        <div class="ilbuni b">
+            <img src="images/ilbuni_1.png" alt="일분이">
+        </div>
+        <div class="ilbuni c">
+            <img src="images/ilbuni_2.png" alt="일분이">
+        </div>
+    </div>
+    <div class="ilbuni d">
+        <img src="images/ilbuni_3.png" alt="일분이">
+    </div>
+
+    <script>
+        (function() {
+            const ilbuni = document.querySelector('.characters');
+
+            function clickIlbuniHandler(e) {
+                // ilbuni.classList.toggle('special');
+                console.log(this)
+                console.log(e.currentTarget)
+                console.log(e.target)
+            }
+            ilbuni.addEventListener('click', clickIlbuniHandler)
+        })()
+    </script>
+</body>
+
+</html>

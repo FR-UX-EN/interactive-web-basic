@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    .box-container{
+      display: flex;
+    }
+    .box {
+      width: 100px;
+      /* transition 을 이용하려면 숫자값 */
+      height: 100px;
+      border: 2px solid black;
+      background: rgba(255, 255, 0, 0.7);
+      transition: 1s 2s;
+    }
+    .box:hover{
+      /* transform: scale(2) rotate(45deg); */
+      /* transform: skewX(30deg) */
+      /* transform: skeyY(30deg) */
+      /* transform: translate(30px, 10px); */
+      /* transform: translateY(-30px); */
+      transform: scale(2);
+      /* transform-origin 의 default 는 정중앙이다 */
+      /* transform-origin: left top; */
+      /* transform-origin: 0% 0%;  left top 을 의미한다. */
+      /* transform-origin: 100% 100%  right bottom 을 의미한다 */
+      /* width, height 변화 준것이랑은 다르다. */
+    }
+  </style>
+</head>
+<body>
+    <h1>CSS Transform</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officiis magnam earum rem totam adipisci placeat eligendi unde nam at dolores, alias nihil. Minima ullam mollitia eaque laudantium veritatis ratione non reiciendis autem eius cumque earum quas numquam, et eum tempore optio sequi sunt unde quia alias, minus magnam atque fugit. Doloremque, doloribus ex! Obcaecati perferendis necessitatibus fuga in a ducimus harum cum! Dolor numquam magnam omnis. Porro nostrum blanditiis id sapiente numquam, dolorum deleniti maxime! Accusamus omnis impedit, laboriosam voluptate quasi! Voluptatem incidunt non quibusdam, a quod vel, facilis dolorem laborum odio maiores ipsum nisi, necessitatibus maxime ipsam nobis!
+    </p>
+    <div class="box-container">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ullam nihil consectetur! Ducimus libero, animi nostrum voluptatem amet maxime atque velit reiciendis inventore expedita dolores eveniet iusto. Accusamus, sint? Pariatur laudantium commodi unde cumque sequi, autem blanditiis neque nostrum illo odit porro velit aliquid at nisi quidem assumenda? Commodi error, doloremque sint. Nemo natus quis consequatur velit saepe ea qui deserunt cum, error dolor nulla, quos eum numquam ratione iusto in alias nostrum. Quasi, ducimus, voluptas. Facilis quos dolorum nisi suscipit excepturi reiciendis, explicabo, consectetur eius mollitia placeat sed sequi magni, molestiae delectus nobis voluptatibus? Possimus non, eveniet fugiat! Libero?</100>
+    </p>
+</body>
+</html>
